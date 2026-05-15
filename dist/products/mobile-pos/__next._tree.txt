@@ -1,0 +1,5 @@
+:HL["./_next/static/chunks/0kfqbui3v1466.css","style"]
+:HL["/images/products/m3.jpg","image"]
+:HL["/images/products/m2.jpg","image"]
+:HL["/images/products/m3-pro.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"category","param":{"type":"d","key":"mobile-pos","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2PgdGHtBKPl-1xOMXSm89"}

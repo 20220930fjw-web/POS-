@@ -2,16 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 
-const productCategories = [
-  'Android POS Terminals',
-  'Smart Cash Registers',
-  'Mobile POS Devices',
-  'Self-Service Kiosks',
-  'POS Printers',
-  'Barcode Scanners',
-  'POS Accessories',
-  'Custom OEM/ODM Solution',
-];
+import { navProductCategories } from '@/data/navigation';
 
 const quantityRanges = [
   '1 - 50 units',
@@ -227,9 +218,9 @@ export default function InquiryForm() {
             className="w-full px-4 py-2.5 text-sm border border-[#E5E7EB] rounded-lg bg-white hover:border-[#6B7280] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1A56DB] focus:border-transparent"
           >
             <option value="">Select a product category</option>
-            {productCategories.map((cat) => (
-              <option key={cat} value={cat}>
-                {cat}
+            {navProductCategories.map((cat) => (
+              <option key={cat.label} value={cat.label}>
+                {cat.label}
               </option>
             ))}
           </select>

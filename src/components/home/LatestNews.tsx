@@ -1,42 +1,10 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
-interface NewsArticle {
-  date: string;
-  category: string;
-  title: string;
-  excerpt: string;
-  gradient: string;
-}
-
-const articles: NewsArticle[] = [
-  {
-    date: "May 10, 2026",
-    category: "Product Launch",
-    title: "Introducing NovaPOS X1: Next-Gen Smart Terminal",
-    excerpt:
-      "Our latest smart POS terminal features a 6.5\" AMOLED display, quad-core processor, and enhanced NFC capabilities for faster transactions.",
-    gradient: "linear-gradient(135deg, #1e3a5f 0%, #1A56DB 100%)",
-  },
-  {
-    date: "May 5, 2026",
-    category: "Industry Insights",
-    title: "The Future of Contactless Payments in 2026",
-    excerpt:
-      "Exploring the latest trends in contactless payment technology and how businesses can prepare for the next wave of digital transactions.",
-    gradient: "linear-gradient(135deg, #0f172a 0%, #334155 100%)",
-  },
-  {
-    date: "April 28, 2026",
-    category: "Company News",
-    title: "NovaPOS Expands to Southeast Asian Markets",
-    excerpt:
-      "Strategic partnerships with regional distributors to bring our complete POS ecosystem to Malaysia, Thailand, and Vietnam.",
-    gradient: "linear-gradient(135deg, #172554 0%, #1e40af 100%)",
-  },
-];
+import { featuredNews } from '@/data/home-data';
 
 export default function LatestNews() {
   const ref = useRef(null);
@@ -61,7 +29,7 @@ export default function LatestNews() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article, index) => (
+          {featuredNews.map((article, index) => (
             <motion.article
               key={article.title}
               initial={{ opacity: 0, y: 30 }}
@@ -116,8 +84,8 @@ export default function LatestNews() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <a
-            href="#"
+          <Link
+            href="/news"
             className="inline-flex items-center text-[#1A56DB] font-semibold text-lg hover:text-[#1545b0] transition-colors group"
           >
             View All News
@@ -134,7 +102,7 @@ export default function LatestNews() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

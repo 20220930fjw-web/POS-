@@ -1,9 +1,10 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Container from '@/components/ui/Container';
 import InquiryForm from '@/components/contact/InquiryForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us - NovaPOS',
+  description: "Get in touch with NovaPOS for product inquiries, OEM/ODM customization, partnership opportunities, and technical support.",
 };
 
 export default function ContactPage() {

@@ -1,16 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const logos = [
-  { name: "Walmart", width: "w-28" },
-  { name: "McDonald's", width: "w-32" },
-  { name: "Starbucks", width: "w-28" },
-  { name: "Marriott", width: "w-28" },
-  { name: "DHL", width: "w-20" },
-  { name: "Shell", width: "w-24" },
-];
+import { partnerLogos } from '@/data/home-data';
 
 export default function Testimonials() {
   const ref = useRef(null);
@@ -39,7 +32,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-wrap items-center justify-center gap-8 md:gap-12"
         >
-          {logos.map((logo, index) => (
+          {partnerLogos.map((logo, index) => (
             <motion.div
               key={logo.name}
               initial={{ opacity: 0, y: 20 }}

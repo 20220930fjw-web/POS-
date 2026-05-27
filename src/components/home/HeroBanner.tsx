@@ -2,30 +2,9 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
-const slides = [
-  {
-    title: "Smart POS Solutions for Global Business",
-    subtitle: "Empowering merchants with cutting-edge payment technology",
-    primaryBtn: "Explore Products",
-    secondaryBtn: "Get a Quote",
-    gradient: "linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1A56DB 100%)",
-  },
-  {
-    title: "Complete POS Ecosystem",
-    subtitle: "From smart terminals to peripherals, we've got you covered",
-    primaryBtn: "View Solutions",
-    secondaryBtn: "Contact Us",
-    gradient: "linear-gradient(135deg, #111827 0%, #1e293b 40%, #334155 100%)",
-  },
-  {
-    title: "OEM/ODM Services",
-    subtitle: "Customize POS terminals with your brand",
-    primaryBtn: "Learn More",
-    secondaryBtn: "Start Custom Project",
-    gradient: "linear-gradient(135deg, #0c1929 0%, #172554 40%, #1e40af 100%)",
-  },
-];
+import { heroSlides } from '@/data/home-data';
 
 const slideVariants = {
   enter: (direction: number) => ({
@@ -56,12 +35,12 @@ export default function HeroBanner() {
 
   const nextSlide = useCallback(() => {
     setDirection(1);
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   }, []);
 
   const prevSlide = useCallback(() => {
     setDirection(-1);
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   }, []);
 
   useEffect(() => {
@@ -81,7 +60,7 @@ export default function HeroBanner() {
           exit="exit"
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="absolute inset-0 flex items-center"
-          style={{ background: slides[currentSlide].gradient }}
+          style={{ background: heroSlides[currentSlide].gradient }}
         >
           <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
             <div className="max-w-xl">
@@ -91,7 +70,7 @@ export default function HeroBanner() {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
               >
-                {slides[currentSlide].title}
+                {heroSlides[currentSlide].title}
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -99,7 +78,7 @@ export default function HeroBanner() {
                 transition={{ delay: 0.4, duration: 0.6 }}
                 className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed"
               >
-                {slides[currentSlide].subtitle}
+                {heroSlides[currentSlide].subtitle}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -107,18 +86,18 @@ export default function HeroBanner() {
                 transition={{ delay: 0.6, duration: 0.6 }}
                 className="mt-8 flex flex-wrap gap-4"
               >
-                <a
-                  href="#"
+                <Link
+                  href="/products"
                   className="inline-flex items-center px-8 py-3 bg-[#1A56DB] text-white font-semibold rounded-lg hover:bg-[#1545b0] transition-colors"
                 >
-                  {slides[currentSlide].primaryBtn}
-                </a>
-                <a
-                  href="#"
+                  {heroSlides[currentSlide].primaryBtn}
+                </Link>
+                <Link
+                  href="/products"
                   className="inline-flex items-center px-8 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/30 hover:bg-white/20 transition-colors"
                 >
-                  {slides[currentSlide].secondaryBtn}
-                </a>
+                  {heroSlides[currentSlide].secondaryBtn}
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -171,7 +150,7 @@ export default function HeroBanner() {
 
       {/* Dot Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
-        {slides.map((_, index) => (
+        {heroSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}

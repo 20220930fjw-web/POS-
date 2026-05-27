@@ -1,13 +1,6 @@
 import Link from 'next/link';
 
-const productLinks = [
-  { label: 'Android POS Terminals', href: '/products/android-pos' },
-  { label: 'Smart Cash Registers', href: '/products/smart-cash-register' },
-  { label: 'Mobile POS Devices', href: '/products/mobile-pos' },
-  { label: 'Self-Service Kiosks', href: '/products/self-service-kiosk' },
-  { label: 'POS Printers', href: '/products/pos-printers' },
-  { label: 'Barcode Scanners', href: '/products/barcode-scanners' },
-];
+import { navProductCategories } from '@/data/navigation';
 
 const solutionLinks = [
   { label: 'Retail & Supermarket', href: '/solutions/retail' },
@@ -62,8 +55,8 @@ export default function Footer() {
               Products
             </h3>
             <ul className="space-y-2.5">
-              {productLinks.map((link) => (
-                <li key={link.label}>
+              {navProductCategories.map((link) => (
+                <li key={link.name}>
                   <Link
                     href={link.href}
                     className="text-sm text-gray-400 hover:text-white transition-colors"

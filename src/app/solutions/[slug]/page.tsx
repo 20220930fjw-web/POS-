@@ -231,18 +231,18 @@ export default async function SolutionDetailPage({
               Get in touch with our solution experts to discuss your specific needs and find the right POS setup for your business.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="inline-flex items-center px-8 py-3.5 bg-white text-[#1A56DB] font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
               >
                 Contact Us
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/contact"
                 className="inline-flex items-center px-8 py-3.5 bg-transparent text-white font-semibold rounded-lg border-2 border-white/40 hover:border-white/70 hover:bg-white/10 transition-all"
               >
                 Schedule a Demo
-              </a>
+              </Link>
             </div>
           </div>
         </div>

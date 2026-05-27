@@ -5,6 +5,7 @@ import { products, productCategories } from '@/data/products';
 
 export const metadata: Metadata = {
   title: 'Downloads - NovaPOS',
+  description: "Download product catalogs, technical specifications, user manuals, and software for all NovaPOS POS terminals and devices.",
 };
 
 interface DownloadItem {

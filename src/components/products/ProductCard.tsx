@@ -1,16 +1,7 @@
 import Link from 'next/link';
 import Badge from '@/components/ui/Badge';
 
-interface Product {
-  name: string;
-  subtitle: string;
-  slug: string;
-  category: string;
-  images: {
-    hero: string;
-  };
-  highlights: string[];
-}
+import type { Product } from '@/types';
 
 interface ProductCardProps {
   product: Product;

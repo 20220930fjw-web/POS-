@@ -1,10 +1,11 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Container from '@/components/ui/Container';
 import { newsArticles } from '@/data/news';
 
 export const metadata: Metadata = {
   title: 'News & Insights - NovaPOS',
+  description: "Stay updated with the latest POS industry news, product launches, and technology insights from NovaPOS.",
 };
 
 const gradients = [

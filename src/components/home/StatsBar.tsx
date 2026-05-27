@@ -1,20 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
-interface StatItem {
-  value: number;
-  suffix: string;
-  label: string;
-}
-
-const stats: StatItem[] = [
-  { value: 20, suffix: "+", label: "Years Experience" },
-  { value: 200, suffix: "+", label: "Countries Served" },
-  { value: 5000, suffix: "+", label: "Global Clients" },
-  { value: 7, suffix: "\u00d724", label: "Tech Support" },
-];
+import { homeStats } from '@/data/home-data';
 
 function formatNumber(num: number): string {
   if (num >= 1000) {
@@ -75,7 +64,7 @@ export default function StatsBar() {
     <section ref={ref} className="w-full bg-[#111827] py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {stats.map((stat, index) => (
+          {homeStats.map((stat, index) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 30 }}

@@ -1,15 +1,6 @@
 import ProductCard from './ProductCard';
 
-interface Product {
-  name: string;
-  subtitle: string;
-  slug: string;
-  category: string;
-  images: {
-    hero: string;
-  };
-  highlights: string[];
-}
+import type { Product } from '@/types';
 
 interface ProductGridProps {
   products: Product[];

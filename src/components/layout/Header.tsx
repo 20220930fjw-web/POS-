@@ -13,14 +13,7 @@ const navLinks = [
   { label: 'Contact', href: '/contact', hasDropdown: false },
 ];
 
-const productCategories = [
-  { label: 'Android POS Terminals', href: '/products/android-pos' },
-  { label: 'Smart Cash Registers', href: '/products/smart-cash-register' },
-  { label: 'Mobile POS Devices', href: '/products/mobile-pos' },
-  { label: 'Self-Service Kiosks', href: '/products/self-service-kiosk' },
-  { label: 'POS Printers', href: '/products/pos-printers' },
-  { label: 'Barcode Scanners', href: '/products/barcode-scanners' },
-];
+import { navProductCategories } from '@/data/navigation';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -110,13 +103,13 @@ export default function Header() {
                   </Link>
                   {link.hasDropdown && productsOpen && (
                     <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-[#E5E7EB] py-2 z-50">
-                      {productCategories.map((cat) => (
+                      {navProductCategories.map((cat) => (
                         <Link
-                          key={cat.label}
+                          key={cat.name}
                           href={cat.href}
                           className="block px-4 py-2 text-sm text-[#374151] hover:text-[#1A56DB] hover:bg-[#F5F5F5] transition-colors"
                         >
-                          {cat.label}
+                          {cat.name}
                         </Link>
                       ))}
                     </div>
@@ -214,14 +207,14 @@ export default function Header() {
                     </Link>
                     {link.hasDropdown && (
                       <div className="ml-4 mt-1 space-y-1">
-                        {productCategories.map((cat) => (
+                        {navProductCategories.map((cat) => (
                           <Link
-                            key={cat.label}
+                            key={cat.name}
                             href={cat.href}
                             onClick={() => setMobileMenuOpen(false)}
                             className="block px-4 py-2 text-sm text-[#6B7280] hover:text-[#1A56DB] hover:bg-[#F5F5F5] rounded-lg transition-colors"
                           >
-                            {cat.label}
+                            {cat.name}
                           </Link>
                         ))}
                       </div>

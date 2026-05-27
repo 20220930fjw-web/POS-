@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import Container from '@/components/ui/Container';
 import SectionTitle from '@/components/ui/SectionTitle';
 import ProductGrid from '@/components/products/ProductGrid';
@@ -30,25 +31,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryProducts = getProductsByCategory(category);
 
   if (!cat) {
-    return (
-      <section className="pt-32 pb-16">
-        <Container>
-          <div className="text-center py-16">
-            <h1 className="text-3xl font-bold text-[#111827] mb-4">Category Not Found</h1>
-            <p className="text-[#6B7280] mb-8">The product category you are looking for does not exist.</p>
-            <Link
-              href="/products"
-              className="inline-flex items-center px-6 py-3 bg-[#1A56DB] text-white rounded-lg hover:bg-[#1444B0] transition-colors"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to All Products
-            </Link>
-          </div>
-        </Container>
-      </section>
-    );
+    notFound();
   }
 
   const productCountText = categoryProducts.length + ' Product' + (categoryProducts.length !== 1 ? 's' : '') + ' Available';

@@ -158,7 +158,7 @@ export default function OemOdmPage() {
           <div className="text-center">
             <h1
               className="text-4xl md:text-5xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               OEM/ODM Services
             </h1>
@@ -187,7 +187,7 @@ export default function OemOdmPage() {
                 </div>
                 <h3
                   className="text-lg font-semibold text-[#111827] mb-3"
-                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  
                 >
                   {item.title}
                 </h3>
@@ -222,7 +222,7 @@ export default function OemOdmPage() {
                     {/* Content */}
                     <h4
                       className="text-sm font-semibold text-[#111827] mt-4 mb-2"
-                      style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                      
                     >
                       {step.title}
                     </h4>
@@ -244,7 +244,7 @@ export default function OemOdmPage() {
                 <div className="flex-1 pt-1">
                   <h4
                     className="text-base font-semibold text-[#111827] mb-1"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    
                   >
                     {step.title}
                   </h4>
@@ -279,25 +279,25 @@ export default function OemOdmPage() {
               </p>
               <div className="grid grid-cols-2 gap-6 pt-4">
                 <div className="p-4 bg-[#F9FAFB] rounded-xl">
-                  <div className="text-2xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-2xl font-bold text-[#1A56DB]" >
                     5,000 m²
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Factory Area</div>
                 </div>
                 <div className="p-4 bg-[#F9FAFB] rounded-xl">
-                  <div className="text-2xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-2xl font-bold text-[#1A56DB]" >
                     200+
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Workers</div>
                 </div>
                 <div className="p-4 bg-[#F9FAFB] rounded-xl">
-                  <div className="text-2xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-2xl font-bold text-[#1A56DB]" >
                     6
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Production Lines</div>
                 </div>
                 <div className="p-4 bg-[#F9FAFB] rounded-xl">
-                  <div className="text-2xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-2xl font-bold text-[#1A56DB]" >
                     12-Step
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">QA Process</div>
@@ -359,7 +359,7 @@ export default function OemOdmPage() {
                 <summary className="flex items-center justify-between cursor-pointer px-6 py-5 text-left hover:bg-[#F9FAFB] transition-colors">
                   <h4
                     className="text-base font-semibold text-[#111827] pr-4"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    
                   >
                     {faq.question}
                   </h4>
@@ -387,7 +387,7 @@ export default function OemOdmPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
             <h2
               className="text-3xl md:text-4xl font-bold text-white leading-tight"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Start Your Custom Project
             </h2>

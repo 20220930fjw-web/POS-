@@ -44,7 +44,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <Link href={`/products/${product.slug}`}>
           <h3
             className="text-lg font-semibold text-[#111827] mb-1 hover:text-[#1A56DB] transition-colors"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            
           >
             {product.name}
           </h3>

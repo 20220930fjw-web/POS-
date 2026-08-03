@@ -73,7 +73,7 @@ export default function DownloadsPage() {
           <div className="text-center">
             <h1
               className="text-4xl md:text-5xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Downloads
             </h1>
@@ -92,7 +92,7 @@ export default function DownloadsPage() {
               <div key={group.category}>
                 <h2
                   className="text-2xl font-bold text-[#111827] mb-6"
-                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  
                 >
                   {group.category}
                 </h2>

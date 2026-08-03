@@ -102,7 +102,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
             <div>
               <h1
                 className="text-3xl md:text-4xl font-bold text-white mb-3"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 {product.name}
               </h1>
@@ -246,7 +246,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
           <div className="text-center">
             <h2
               className="text-3xl md:text-4xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Interested in {product.name}?
             </h2>

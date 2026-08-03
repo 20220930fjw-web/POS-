@@ -33,7 +33,7 @@ export default function NewsPage() {
           <div className="text-center">
             <h1
               className="text-4xl md:text-5xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               News &amp; Insights
             </h1>

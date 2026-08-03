@@ -55,7 +55,7 @@ export default function SolutionsPage() {
           <div className="text-center">
             <h1
               className="text-4xl md:text-5xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Solutions
             </h1>
@@ -98,7 +98,7 @@ export default function SolutionsPage() {
                 <div className="p-6">
                   <h3
                     className="text-xl font-semibold text-[#111827] mb-2 group-hover:text-[#1A56DB] transition-colors"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    
                   >
                     {solution.title}
                   </h3>
@@ -137,7 +137,7 @@ export default function SolutionsPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
             <h2
               className="text-3xl md:text-4xl font-bold text-white leading-tight"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Not Sure Which Solution Fits?
             </h2>

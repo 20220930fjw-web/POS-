@@ -95,7 +95,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
               </div>
               <h1
                 className="text-3xl md:text-4xl font-bold text-[#111827] leading-tight"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 {article.title}
               </h1>
@@ -133,7 +133,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
             <div className="mt-12 p-8 bg-gradient-to-r from-[#1A56DB] to-[#1444B0] rounded-xl text-center">
               <h3
                 className="text-xl font-semibold text-white mb-2"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 Have questions?
               </h3>
@@ -165,7 +165,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
             <div className="mt-16">
               <h2
                 className="text-2xl font-bold text-[#111827] mb-8"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 Related Articles
               </h2>

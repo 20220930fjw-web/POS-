@@ -54,7 +54,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </nav>
           <h1
             className="text-4xl md:text-5xl font-bold text-white mb-4"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            
           >
             {cat.name}
           </h1>

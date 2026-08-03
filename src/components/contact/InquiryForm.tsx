@@ -92,7 +92,7 @@ export default function InquiryForm() {
         </div>
         <h3
           className="text-xl font-semibold text-[#111827] mb-2"
-          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+          
         >
           Inquiry Submitted Successfully!
         </h3>
@@ -131,7 +131,7 @@ export default function InquiryForm() {
     <form onSubmit={handleSubmit} className="bg-white rounded-xl shadow-sm p-6 lg:p-8">
       <h3
         className="text-xl font-semibold text-[#111827] mb-6"
-        style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+        
       >
         Request for Quotation
       </h3>

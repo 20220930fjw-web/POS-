@@ -17,7 +17,7 @@ export default function SectionTitle({
         className={`text-3xl md:text-4xl font-bold mb-4 ${
           light ? 'text-white' : 'text-[#111827]'
         }`}
-        style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+        
       >
         {title}
       </h2>

@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="lg:col-span-3">
             <h1
               className="text-3xl md:text-4xl font-bold text-[#111827] mb-3"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Get in Touch
             </h1>
@@ -30,7 +30,7 @@ export default function ContactPage() {
           <div className="lg:col-span-2">
             <h2
               className="text-2xl font-semibold text-[#111827] mb-6"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Contact Information
             </h2>

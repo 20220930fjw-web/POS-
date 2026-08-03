@@ -35,7 +35,7 @@ export default function Footer() {
               </svg>
               <span
                 className="text-xl font-bold text-white"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 NovaPOS
               </span>
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-base font-semibold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Products
             </h3>
@@ -72,7 +72,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-base font-semibold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Solutions
             </h3>
@@ -94,7 +94,7 @@ export default function Footer() {
           <div>
             <h3
               className="text-base font-semibold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Contact Us
             </h3>

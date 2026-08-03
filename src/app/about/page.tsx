@@ -109,7 +109,7 @@ export default function AboutPage() {
           <div className="text-center">
             <h1
               className="text-4xl md:text-5xl font-bold text-white mb-4"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               About NovaPOS
             </h1>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                         </span>
                         <h3
                           className="text-xl font-semibold text-[#111827] mb-2"
-                          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                          
                         >
                           {milestone.title}
                         </h3>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                         </span>
                         <h3
                           className="text-lg font-semibold text-[#111827] mb-1"
-                          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                          
                         >
                           {milestone.title}
                         </h3>
@@ -227,7 +227,7 @@ export default function AboutPage() {
                 </div>
                 <h3
                   className="text-lg font-semibold text-[#111827] mb-3"
-                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  
                 >
                   {item.title}
                 </h3>
@@ -285,19 +285,19 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-3 gap-6 pt-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-3xl font-bold text-[#1A56DB]" >
                     200+
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Countries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-3xl font-bold text-[#1A56DB]" >
                     10M+
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Devices Shipped</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#1A56DB]" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                  <div className="text-3xl font-bold text-[#1A56DB]" >
                     20+
                   </div>
                   <div className="text-sm text-[#6B7280] mt-1">Years Experience</div>
@@ -333,7 +333,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
             <h2
               className="text-3xl md:text-4xl font-bold text-white leading-tight"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Partner With NovaPOS
             </h2>

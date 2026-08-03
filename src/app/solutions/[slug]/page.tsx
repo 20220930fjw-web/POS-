@@ -77,7 +77,7 @@ export default async function SolutionDetailPage({
             </span>
             <h1
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               {solution.title}
             </h1>
@@ -203,7 +203,7 @@ export default async function SolutionDetailPage({
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <h3
                     className="text-2xl font-bold text-[#111827] mb-4"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    
                   >
                     {solution.caseStudy.title}
                   </h3>
@@ -223,7 +223,7 @@ export default async function SolutionDetailPage({
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
             <h2
               className="text-3xl md:text-4xl font-bold text-white leading-tight"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+              
             >
               Ready to Transform Your Business?
             </h2>

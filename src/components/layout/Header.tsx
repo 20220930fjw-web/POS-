@@ -65,7 +65,7 @@ export default function Header() {
               </svg>
               <span
                 className="text-xl font-bold text-[#1A56DB]"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                
               >
                 NovaPOS
               </span>
@@ -171,7 +171,7 @@ export default function Header() {
               <div className="flex items-center justify-between p-4 border-b border-[#E5E7EB]">
                 <span
                   className="text-lg font-bold text-[#1A56DB]"
-                  style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                  
                 >
                   NovaPOS
                 </span>
